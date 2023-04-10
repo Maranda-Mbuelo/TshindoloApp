@@ -1,0 +1,54 @@
+*, body{
+    background-color: #ccc;
+}
+
+.container{
+    background-color: #ccc;
+    height: 35rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.wrapper{
+    margin-top: -2rem;
+    background-color: #ccc;
+    height: 42rem;
+    border-radius: 12px;
+}
+
+.welcome-note{
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.material-symbols-outlined{
+    margin: 2rem;
+}
+
+.slots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+
+  .slot1, .slot2, .slot3{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    padding: 2rem;
+    margin: 2rem;
+    width: 20rem;
+    height: 8rem;
+    position: relative;
+    height: auto;
+  }
+
+  .slot2{
+    position: relative;
+
+    /* height: auto; */
+  }
+
+  .info{
+    font-size: 0.8rem;
+  }

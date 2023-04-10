@@ -1,0 +1,116 @@
+.wrapper{
+    /* background-image: url('/assets/images/20230106_163607.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 2rem;
+    margin: 2rem;
+    width: 40%;
+    transition: 2s;
+  }
+
+  .card2 {
+    background-image: url('/assets/images/20221211_160345.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 2rem;
+    margin: 2rem;
+    width: 40%;
+    height: 17rem;
+    transition: 2s;
+  }
+
+  .card2:hover{
+    width: 45%;
+    transform: skewX(0px);
+  }
+
+  /* .card:hover{
+    width: 50%;
+    height: 19rem;
+    transform: skewY(0px);
+  } */
+
+  .source{
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    /* position: fixed;
+    top: 2rem;
+    left: 17rem; */
+  }
+
+  .offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .slots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    color: #ccc;
+  }
+
+  .slot1{
+    background-image: url('/assets/images/20230106_163917.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slot2{
+    background-image: url('/assets/images/20230106_163607.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slot3{
+    background-image: url('/assets/images/20230106_163607.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slot4{
+    background-image: url('/assets/images/20221130_204653.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slot1, .slot2, .slot3, .slot4{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 2rem;
+    margin: 2rem;
+    width: 12rem;
+    height: 8rem;
+    transition: 1s;
+  }
+
+  .slot1:hover, .slot2:hover, .slot3:hover, .slot4:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 5px aqua;
+    color: white;
+  }
