@@ -1,4 +1,3 @@
-@import "~leaflet/dist/leaflet.css";
-.map {
-  height: 500px;
+.map{
+    background-color: darkgray;
 }

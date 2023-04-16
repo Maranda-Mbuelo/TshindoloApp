@@ -1,106 +1,77 @@
-<div class="wrapper">
+<div class="d-flex flex-column h-100">
 
-    <div class="container">
-        <header>
-            <h2 class="welcome-note">Contact Us<span class="material-symbols-outlined">call</span></h2>
-        </header>
-    
-        <div class="slots">
-            <div class="slot1">
-                <h5>By Phone</h5>
-                <h6 style="font-size: 0.95rem;"><label style="font-weight: 100rem;">(Monday to Sunday, 9am to 3pm)</label></h6>
-                <p class="info"> 
-                    Mr Maranda : 076 505 4062
-                        <br>
-                    Mrs Maranda: 071 960 5638
-                        <br>
-                    Mbuelo     : 078 772 2573
-                    
-                </p>
-            </div>
-            
-            <div class="slot2">
-    
-                <h5>Send us an Email</h5>
-    
-                <p>
-                    just send us your questions
-                        <br>
-                    or concerns by writing email
-                        <br>
-                    to us, and we will give
-                        <br>
-                    you the help you need.
-                </p>
-    
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Write Email </button>
-    
-                     <!-- Modal --> 
-                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-                     <div class="modal-dialog" role="document"> 
-                     <div class="modal-content"> 
-                     <div class="modal-header"> <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> 
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
-                     <span aria-hidden="true">&times;</span> 
-                     </button> 
-                     </div> 
-                     <div class="modal-body"> 
-                        
-                        <form>
-    
-                            <div class="form-outline mb-4">
-                                <input type="text" id="form4Example1" class="form-control">
-                                <label class="form-label" for="form4Example1">Name</label>
-                            </div>
-            
-                            <div class="form-outline mb-4">
-                                <input type="email" id="form4Example2" class="form-control">
-                                <label class="form-labe" for="form4Example2">Email Address</label>
-                            </div>
-            
-                            <div class="form-outline mb-4">
-                                <textarea class="form-control" id="form4Example3" rows="4" placeholder="Send us Message"></textarea>
-                                <label class="form-label" for="form4Example3">Message</label>
-                            </div>
-            
-                            <div class="form-check d-flex justify-content-center mb-4">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked/>
-                                <label class="form-check-label" for="form4Example4">
-                                    Send me a copy of this message
-                                </label>
-                            </div>
-            
-                            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-            
-                        </form> 
-    
-                     </div> 
-                     <div class="modal-footer"> 
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
-                        <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> 
-                    </div> 
-                    </div> 
-                </div>
-                    
-    
-                <!-- </div> -->
-    
-            </div>
-            <div class="slot3">
-                <h5>Live Chat</h5>
-    
-                <p class="info">
-                    Chat with a member of our 
-                        <br>
-                    In-house team.
-                </p>
-    
-                <!-- <button routerLink=""></button> -->
-            </div>
-            
-    
+  <div class="flex-container">
+
+    <div class="slots">
+      <div class="slot1">
+        <h5 class="headers">By Phone</h5>
+        <h6 style="font-size: 0.95rem;"><label style="font-weight: 100rem;">(Monday to Sunday, 9am to 3pm)</label></h6>
+        <p class="info"> 
+          Mr Maranda : 076 505 4062
+          <br>
+          Mrs Maranda: 071 960 5638
+          <br>
+          Mbuelo     : 078 772 2573
+        </p>
+      </div>
+      <div class="slot2">
+        <h5 class="headers">Email Us!</h5>
+          
+        <p>
+          just send us your questions
+          <br>
+          or concerns by writing email
+          <br>
+          to us, and we will give
+          <br>
+          you the help you need.
+        </p>
+        <button type="button" class="btn btn-primary" id="buy-button">Email Us</button>
+
+        <div class="popup">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>This functionality is still under development, and will start working next month.</p>
+          </div>
+        </div>
+      
+
+      </div>
+      <div class="slot3">
+        
+        <h5 class="headers">Live Chat</h5>
+        <p class="info">
+          Chat with a member of our 
+          <br>
+          In-house team.
+        </p>
+
+      </div>
+
+
+      <div class="slot4">
+          
+        <p style="color: yellow; text-shadow: 0px 0px 4px red;">
+          <br> <br> <br> <br> <br>
+          Developer:
+          <br>
+          Mbuelo
+        </p>
+        <button type="button" class="btn btn-primary" id="buy-button">Call-Me</button>
+
+        <div class="mbueloPopup">
+          <div class="mbueloPopup-content">
+            <span class="close">&times;</span>
+            <p>
+              This functionality is still under development, and will start working next month.
+              <br>
+              In the meanWhile you can just manually call me @: 078 772 2573
+            </p>
+          </div>
+        </div>
+      
     </div>
-    
+
+  </div>
 
 </div>

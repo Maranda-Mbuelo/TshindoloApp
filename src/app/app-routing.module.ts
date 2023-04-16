@@ -9,6 +9,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // Import the FormsModule
 import { AppComponent } from './app.component';
 import { LocationComponent } from './location/location.component';
+
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, 
   { path: 'home', component: HomeComponent }, 
@@ -16,7 +18,7 @@ const routes: Routes = [
   { path: 'advantage', component: AdvantagesComponent },
   { path: 'contact-us', component: ContactsComponent }, 
   { path: 'rate-us', component: RatingComponent },
-  { path: 'location', component: LocationComponent }
+  { path: 'location', component: LocationComponent },
 ];
 
 @NgModule({

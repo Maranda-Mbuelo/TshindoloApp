@@ -1,128 +1,91 @@
-<!-- <div class="container-fluid">
-    
-    <nav class="navbar bg-body-tertiary" >
-        <div class="container-fluid">
-          <a class="navbar-brand" class="fs-2">Tshindolo Park</a>
-          <form class="d-flex" role="search">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid" class="text-bg-primary">
-                  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" class="text-bg-primary" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-          </form>
-        </div>
-      </nav>
+<div class="d-flex flex-column h-100">
+  
 
-  </div> -->
+  <header>
 
+    <h2 id="welcome-note">Tshindolo Park</h2>
 
-
-
-
-
-
-
-
-<!-- ======================       My Code      ========================= -->
-
-
-<div class="wrapper" class="bg-image">
-    <header>
-        <h2 id="welcome-note">Tshindolo Park</h2>
-    
-        <nav>
-            <ul class="nav_links">
-                <li><a href="about-us"> About Us <span class="material-symbols-outlined">
-                    chat_paste_go
-                    </span></a></li>
-                <li><a href="location"> Location <span class="material-symbols-outlined">
-                    location_on
-                    </span></a></li>
-                <li><a href="contact-us"> Contact Us <span class="material-symbols-outlined">call</span></a></li>
-                <li><a href="rate-us"> Rate Us <span class="material-symbols-outlined">
-                    thumb_up
-                    </span></a></li>
-            </ul>
-        </nav>
-    
-    </header>
-
-    <!-- ==============     My Cards Container starts    ========== -->
-    <div class="container">
-        <div class="card1">
-          <h2 id="welcome-note1"> </h2>
-          <span class="material-symbols-outlined" id="attractions_logo">
-            attractions
-            </span>         
-        </div>
+    <nav class="nav_links" class="navbar navbar-expand-lg navbar-light bg-light">
       
-        <div class="card2">
-            <form class="row g-3">
-                <h4 id="welcome-note2"> </h4>
-                <div class="col-md-6">
-                    
-                  <!-- Put a name TAg -->
-                  <label for="inputEmail4" class="form-label">Name</label>
-                  <input type="text" class="form-control" placeholder="First name" aria-label=" First name">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="text" class="form-control" placeholder="Last name" aria-label=" Last name">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Phone Number</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder=" Enter Your Phone number ">
-                </div>
-                
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label">Kids</label>
-                  <div class="input-group mb-3">
-                    <div class="input-group-text">
-                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                    </div>
-                    <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Quantity : 0">
-                  </div>
-                  
-                  <label for="inputState" class="form-label">Adults</label>
-                  <div class="input-group mb-3">
-                    <div class="input-group-text">
-                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                    </div>
-                    <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Quantity : 0">
-                  </div>
-                  
-                </div>
-
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary" class="buy-button">Buy !</button>
-                </div>
-              </form>
+      <div style="background-color: #005469;" class="dropdown">
+        <button style="background-color: #005469;" onclick="myFunction()" class="dropbtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: white" class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+        <div id="myDropdown" class="dropdown-content">
+          
+              <a class="nav-link" href="about-us">About Us<span class="material-symbols-outlined">chat_paste_go</span></a>
+              <a class="nav-link" href="location">Location<span class="material-symbols-outlined">location_on</span></a>
+              <a class="nav-link" href="contact-us">Contact Us<span class="material-symbols-outlined">call</span></a>
+              <a class="nav-link" href="rate-us">Rate Us<span class="material-symbols-outlined">thumb_up</span></a>
         </div>
       </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item"><a class="nav-link" href="about-us">About Us<span class="material-symbols-outlined">chat_paste_go</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="location">Location<span class="material-symbols-outlined">location_on</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us<span class="material-symbols-outlined">call</span></a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="rate-us">Rate Us<span class="material-symbols-outlined">thumb_up</span></a></li>
+          </ul>
+      </div>
+  </nav>
 
-      <!-- ==============     My Cards Container Ends    ========== -->
+  </header>
 
+  <div class="flex-container">
+    <div class="card1">
+
+      <!-- Your content here -->
+      <h2 id="welcome-note1">  </h2> 
+      
+    </div>
+    <div class="card2">
+      <form class="row g-3">
+        <h4 id="welcome-note2"> </h4>
+        <div class="col-md-6">
+          <!-- Put a name TAg -->
+          <label for="inputEmail4" class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="First name" aria-label=" First name">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="text" class="form-control" placeholder="Last name" aria-label=" Last name">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder=" Enter Your Phone number ">
+        </div>
+        <div class="col-md-4" style="padding-left: 0.5rem;">
+          <label for="inputState" class="form-label">Kids</label>
+          <div class="input-group mb-3">
+            <div class="input-group-text">
+              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Quantity : 0">
+          </div>
+          <label for="inputState" class="form-label">Adults</label>
+          <div class="input-group mb-3">
+            <div class="input-group-text">
+              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Quantity : 0">
+          </div>
+        </div>
+        
+        
+        <div class="col-12">
+          <!-- <button type="submit" class="btn btn-primary" class="buy-button">Buy !</button> -->
+          <button type="button" class="btn btn-primary" id="buy-button">Buy !</button>
+            <div class="popup">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <p>This functionality is still under development, and will start working next month.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+  </div>
+  </div>
 </div>
-
-
-
-

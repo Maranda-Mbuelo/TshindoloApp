@@ -1,5 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+/* @media (max-width: 767px) {
+  body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+ @media (min-width: 768px) {
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+}   */
+
+
 button {
     padding: 10px;
     background-color: #007bff;
@@ -11,5 +30,6 @@ button {
   
   button:hover {
     background-color: #0069d9;
-    box-shadow: 0.5rem 0.4rem 0.4rem #003c7c;
+    box-shadow: 0.4rem 0.3rem 0.4rem #003c7c;
   }
+
