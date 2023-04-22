@@ -1,0 +1,44 @@
+[debug] [2023-04-18T02:30:54.756Z] ----------------------------------------------------------------------
+[debug] [2023-04-18T02:30:54.760Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mbuelo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-04-18T02:30:54.761Z] CLI Version:   11.27.0
+[debug] [2023-04-18T02:30:54.761Z] Platform:      win32
+[debug] [2023-04-18T02:30:54.762Z] Node Version:  v18.12.1
+[debug] [2023-04-18T02:30:54.764Z] Time:          Tue Apr 18 2023 04:30:54 GMT+0200 (South Africa Standard Time)
+[debug] [2023-04-18T02:30:54.764Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-18T02:30:54.927Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-18T02:30:54.928Z] > authorizing via signed-in user (marandambuelo3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Mbuelo\Desktop\Angular Projects\TshindoloPark
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-18T02:30:57.488Z] Using project from CLI flag: tshindolo-bymbuelo
+[debug] [2023-04-18T02:30:57.498Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tshindolo-bymbuelo [none]
+[debug] [2023-04-18T02:30:58.589Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tshindolo-bymbuelo 200
+[debug] [2023-04-18T02:30:58.590Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tshindolo-bymbuelo {"projectId":"tshindolo-bymbuelo","projectNumber":"996366988230","displayName":"Tshindolo-byMbuelo","name":"projects/tshindolo-bymbuelo","resources":{"hostingSite":"tshindolo-bymbuelo"},"state":"ACTIVE","etag":"1_ed861cfd-38ba-4cb9-ad56-477d89fb9e13"}
+[info] i  Using project tshindolo-bymbuelo (Tshindolo-byMbuelo) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

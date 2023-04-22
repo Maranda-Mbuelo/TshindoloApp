@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contacts',
@@ -10,6 +10,8 @@ export class ContactsComponent implements OnInit {
   constructor() {
 
   }
+
+  @Input() pictures: string[] = [];
 
   ngOnInit(): void {
     const buyButton = document.getElementById('buy-button') as HTMLElement;

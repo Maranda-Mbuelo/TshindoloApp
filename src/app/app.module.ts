@@ -9,8 +9,9 @@ import { AdvantagesComponent } from './advantages/advantages.component';
 import { AboutComponent } from './about/about.component';
 import { OffersComponent } from './advantages/offers/offers.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { RatingComponent } from './rating/rating.component';
 import { LocationComponent } from './location/location.component';
+import { TshindoloRatingComponent } from './tshindolo-rating/tshindolo-rating.component';
+import { ParkPicturesComponent } from './park-pictures/park-pictures.component';
 // import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -21,8 +22,9 @@ import { LocationComponent } from './location/location.component';
     AboutComponent,
     OffersComponent,
     ContactsComponent,
-    RatingComponent,
-    LocationComponent
+    LocationComponent,
+    TshindoloRatingComponent,
+    ParkPicturesComponent
   ],
   imports: [
     BrowserModule,

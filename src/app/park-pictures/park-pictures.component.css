@@ -1,0 +1,31 @@
+
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .selected-picture-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .selected-picture {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  

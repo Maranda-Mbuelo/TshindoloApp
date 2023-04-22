@@ -1,0 +1,10 @@
+<div class="picture-container">
+    <div class="selected-picture-container">
+        <img class="selected-picture" [src]="'assets/images/' + selectedPicture" alt="Selected Picture">
+    </div>
+    <div class="navigation">
+      <button (click)="previousPicture()">Previous</button>
+      <button (click)="nextPicture()">Next</button>
+    </div>
+  </div>
+  

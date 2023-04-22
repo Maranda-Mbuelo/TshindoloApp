@@ -1,0 +1,120 @@
+    .review-textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #F5F5F5;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #333;
+        resize: none;
+      }
+
+      .btn-primary {
+        background-color: #D17581;
+        border-color: #D17581;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      
+      .btn-primary:hover {
+        background-color: #CA6475;
+        border-color: #CA6475;
+      }
+
+    @media screen and (max-width: 768px) {
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-image: url(/assets/images/20230106_163917.jpg);
+          height: auto;
+          width: auto;
+        }
+      }
+    
+    .flex-container {
+        background-image: url(/assets/images/20230106_163917.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        margin: 0;
+      }
+
+      .slots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slot1{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .review-textarea{
+        width: 20rem;
+      }
+    
+      .container{
+        padding: 4rem;
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.788);
+        color: #F5F5F5;
+      }
+    
+    #about {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8;
+        color: var(--midWhite);
+        padding: 80px 0;
+        box-shadow: 0rem 0rem 2rem black;
+        background-color: rgba(0, 0, 0, 0.685);
+      }
+      
+      
+      #about h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        font-family: 'Activello', sans-serif;
+      }
+      
+      #about p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        font-family: 'Open Sans', sans-serif;
+      }
+    
+      @media screen and (max-width: 768px) {
+        .flex-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .slots{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+      
