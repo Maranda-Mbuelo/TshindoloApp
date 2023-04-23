@@ -12,12 +12,21 @@ export class ParkPicturesComponent implements OnInit {
   selectedPicture = '';
   showNavigation = false;
   currentIndex = 0;
+  
 
   constructor(private http: HttpClient) { }
 
+  // ngOnInit() {
+  //   this.loadPictures();
+  // }
+
   ngOnInit() {
-    this.loadPictures();
+    this.http.get<any>('assets/park-pictures.json').subscribe(data => {
+      this.pictures = data;
+      console.log(this.pictures);
+    });
   }
+  
 
   loadPictures() {
     this.http.get('assets/images/', { responseType: 'text' })
