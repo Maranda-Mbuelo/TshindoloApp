@@ -1,45 +1,28 @@
-<div class="d-flex flex-column h-100">
-
-    <div class="flex-container">
-        <div class="card1">
-            
+<div id="container">
+    <div class="cards">
+        <div id="card1">
+            <img src="/assets/images/Tshindolo_59.jpg" alt="Background Image">
         </div>
       
-        <div class="card2">
-          
+        <div id="card2">
             <h1>WHO ARE WE</h1>
-            <p id="define-paragraphs">
-                
-
-            </p>
-            
-            <div class="source">
-                <p id="source"> </p>
+            <p id="define-paragraphs"></p>
+            <div id="source">
+                <p id="source-text"></p>
             </div>
-
         </div>
+    </div>
 
-
-      </div>
-
-      <div class="offers">
+    <div id="offers">
         <h3>WHAT WE DO</h3>
     </div>
 
-    <div class="slots">
-        <div class="slot1">
-            <h5>Adults Swimming pools</h5>
-        </div>
-        <div class="slot2">
-            <h5>Water Rides</h5>
-            <h5>Basic</h5>
-        </div>
-        <div class="slot3">
-            <h5>Kids Swimming pools</h5>
-        </div>
-        <div class="slot4">
-            <h5>Sports Activities</h5>
+    <div id="slots">
+        <div *ngFor="let slot of slots" class="slot">
+            <img src="{{slot.imagePath}}" alt="Background Image">
+            <div class="content">
+                <h5 *ngFor="let item of slot.content">{{item}}</h5>
+            </div>
         </div>
     </div>
-
 </div>

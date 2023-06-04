@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // <-- Add this line
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { LocationComponent } from './location/location.component';
 import { TshindoloRatingComponent } from './tshindolo-rating/tshindolo-rating.component';
 import { ParkPicturesComponent } from './park-pictures/park-pictures.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { HeaderComponent } from './header/header.component';
 // import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -24,15 +28,16 @@ import { ParkPicturesComponent } from './park-pictures/park-pictures.component';
     ContactsComponent,
     LocationComponent,
     TshindoloRatingComponent,
-    ParkPicturesComponent
+    ParkPicturesComponent,
+    GalleryComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    // })  
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

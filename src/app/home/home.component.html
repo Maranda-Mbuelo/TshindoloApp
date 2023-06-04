@@ -1,91 +1,39 @@
-<div class="d-flex flex-column h-100">
-  
+<app-header #headerComponent></app-header>
+<section>
+  <button (click)="getButton()" class="menu">
+    <div class="menu-icon">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    
+  </button>
+  <div class="blackPapper"></div>
+  <div class="menu-btn">
+    <label>Menu</label>
 
-  <header>
+    <div class="navigation">
+      <ng-container *ngFor="let link of myLinks">
+        <a href="{{link.path}}">{{link.name}}</a>
+    </ng-container>
+    </div>
+  </div>
 
-    <h2 id="welcome-note">Tshindolo Park</h2>
-
-    <nav class="nav_links" class="navbar navbar-expand-lg navbar-light bg-light">
-      
-      <div style="background-color: #005469;" class="dropdown">
-        <button style="background-color: #005469;" onclick="myFunction()" class="dropbtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span style="color: white" class="navbar-toggler-icon"></span>
-      </button>
-        <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
-        <div id="myDropdown" class="dropdown-content">
-          
-              <a class="nav-link" href="TshindoloPark/about-us">About Us<span class="material-symbols-outlined">chat_paste_go</span></a>
-              <a class="nav-link" href="https://goo.gl/maps/xkp2dDerPZPksEdV6">Location<span class="material-symbols-outlined">location_on</span></a>
-              <a class="nav-link" href="TshindoloPark/contact-us">Contact Us<span class="material-symbols-outlined">call</span></a>
-              <a class="nav-link" href="TshindoloPark/rate-us">Rate Us<span class="material-symbols-outlined">thumb_up</span></a>
-        </div>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              
-              <li class="nav-item"><a class="nav-link" href="TshindoloPark/about-us">About Us<span class="material-symbols-outlined">chat_paste_go</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="https://goo.gl/maps/xkp2dDerPZPksEdV6">Location<span class="material-symbols-outlined">location_on</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="TshindoloPark/contact-us">Contact Us<span class="material-symbols-outlined">call</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="TshindoloPark/rate-us">Rate Us<span class="material-symbols-outlined">thumb_up</span></a></li>
-          </ul>
-      </div>
-  </nav>
-
-  </header>
-
-  <div class="flex-container">
+  <div class="card-holder">
     <div class="card1">
-
-      <!-- Your content here -->
-      <h2 id="welcome-note1">  </h2> 
-      
+      <p></p>
+      <h1></h1>
+      <p id="short-text">
+      </p>
     </div>
     <div class="card2">
-      <form class="row g-3">
-        <h4 id="welcome-note2"> </h4>
-        <div class="col-md-6">
-          <!-- Put a name TAg -->
-          <label for="inputEmail4" class="form-label">Name</label>
-          <input type="text" class="form-control" placeholder="First name" aria-label=" First name">
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="text" class="form-control" placeholder="Email" aria-label=" Last name">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Phone Number</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder=" Enter Your Phone number ">
-        </div>
-        <div class="col-md-4" style="padding-left: 0.5rem;">
-          <label for="inputState" class="form-label">Kids</label>
-          <div class="input-group mb-3">
-            <div class="input-group-text">
-              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-            </div>
-            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Quantity : 0">
-          </div>
-          <label for="inputState" class="form-label">Adults</label>
-          <div class="input-group mb-3">
-            <div class="input-group-text">
-              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-            </div>
-            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Quantity : 0">
-          </div>
-        </div>
-        
-        
-        <div class="col-12">
-          <!-- <button type="submit" class="btn btn-primary" class="buy-button">Buy !</button> -->
-          <button type="button" class="btn btn-primary" id="buy-button">Buy !</button>
-            <div class="popup">
-              <div class="popup-content">
-                <span class="close">&times;</span>
-                <p>This functionality is still under development, and will start working next month.</p>
-              </div>
-            </div>
-          </div>
-        </form>
+      <div class="button-container">
+        <button class="modern-button">View Pictures</button>
+      </div>
+    </div>
+    
+    
   </div>
-  </div>
-</div>
+
+ </section>
+

@@ -1,167 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-html, body {
+body, html {
   height: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #ccc;
 }
 
-.flex-container {
-  height: 100%;
+#container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cards{
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 2rem;
-  padding-bottom: 4.35rem;
-  margin: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* box-shadow: 0px 5px 15px 2px black; */
 }
 
-
-@media screen and (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .slots{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-.card1, .card2 {
-  border-radius: 5px;
-  box-shadow: 0px 5px 15px 2px #575757;
-  padding: 2rem;
-  margin: 1rem;
-  width: 40%;
-}
-
-@media screen and (max-width: 768px) {
-  
-  .card1{
-    order: 1;
-    transition: 2s;
-    background-image: url(/assets/images/20221211_160345.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .card1:hover {
-    width: 20rem; 
-    height: 21rem;
-    transform: skewX(0px);
-  }
-  .card2{
-    order: 2;
-    width: 80%;
-    height: auto;
-  }
-}
-
-.card1 {
+#card1 {
+  position: relative;
   width: 35%;
-  order: 2;
   height: 18rem;
   margin-top: 8rem;
   margin-left: 2rem;
-  display: flex;
-  justify-content: center;
-  background-image: url(/assets/images/20221211_160345.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* box-shadow: 0px 5px 15px 2px black; */
   transition: 2s;
 }
 
-
-.card2 {
-  order: 1;
-  height: auto;
-
+#card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-  .card1:hover{
-    width: 50%;
-    height: 25rem;
-    transform: skewX(0px);
-  }
+#card1:hover {
+  width: 50%;
+  height: 25rem;
+  transform: skewX(0);
+}
 
-  /* .card:hover{
-    width: 50%;
-    height: 19rem;
-    transform: skewY(0px);
-  } */
+#card2 {
+  width: 40%;
+  margin-top: 10%;
+  min-height: 35vh!important;
+  height: auto;
+  order: -1;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 2px #575757;
+  font-family: 'Roboto', sans-serif;
+}
+
+#offers, #slots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#offers h3 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+#slots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  color: #ccc;
+}
+
+.slot {
+  position: relative;
+  width: 12rem;
+  height: 8rem;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.slot:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 0px 5px aqua;
+  color: white;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
 
 
-  .offers{
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 768px) {
+  #slots {
+    flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
   }
 
-  .slots{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0rem;
-    color: #ccc;
+  .cards{
+    flex-direction: column;
   }
 
-  .slot1{
-    background-image: url('/assets/images/20230106_163917.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .slot2{
-    background-image: url('/assets/images/20210501_210957.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  #card2{
+    margin-top: 10%;
+    width: 80%;
+    min-height: 60vh!important;
+    font-size: 1.2rem;
   }
 
-  .slot3{
-    background-image: url('/assets/images/20230106_163607.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .slot {
+    width: 80%;
+    margin: 1rem;
   }
+}
 
-  .slot4{
-    background-image: url('/assets/images/20221130_204653.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.slot {
+  position: relative;
+  width: 12rem;
+  height: 8rem;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+  transition: 1s;
+}
 
-  .slot1, .slot2, .slot3, .slot4{
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ccc;
-    padding: 2rem;
-    margin: 2rem;
-    width: 12rem;
-    height: 8rem;
-    transition: 1s;
-  }
+.slot img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  z-index: -1;
+}
 
-  .slot1:hover, .slot2:hover, .slot3:hover, .slot4:hover{
-    transform: translateY(-15px);
-    box-shadow: 0px 0px 5px aqua;
-    color: white;
-  }
+.slot:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 0px 5px aqua;
+  color: white;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}

@@ -1,67 +1,15 @@
-<div class="d-flex flex-column h-100">
-
-  <div class="flex-container">
-
-    <div class="slots">
-      <div class="slot1">
-        <h5 class="headers">By Phone</h5>
-        <h6 style="font-size: 0.95rem;"><label style="font-weight: 100rem;">(Monday to Sunday, 9am to 3pm)</label></h6>
-        <p class="info"> 
-          N.E Maranda : 076 505 4062
-          <br>
-          N.A Maranda: 071 960 5638
-          <br>
-          Mbuelo     : 078 772 2573
-        </p>
-      </div>
-      <div class="slot2">
-        <h5 class="headers">Email Us!</h5>
-          
-        <p>
-          just send us your questions
-          <br>
-          or concerns by writing email
-          <br>
-          to us, and we will give
-          <br>
-          you the help you need.
-        </p>
-        <button type="button" class="btn btn-primary" id="buy-button">Email Us</button>
-
-        <div class="popup">
-          <div class="popup-content">
-            <span class="close">&times;</span>
-            <p>This functionality is still under development, and will start working next month.</p>
-          </div>
-        </div>
-      
-
-      </div>
-      <div class="slot3">
-        
-        <h5 class="headers">Live Chat</h5>
-        <p class="info">
-          Chat with a member of our 
-          <br>
-          In-house team.
-        </p>
-
-      </div>
-
-
-      <div class="slot4">
-          
-        <p style="color: yellow; text-shadow: 0px 0px 4px red;">
-          <br> <br> <br> <br> <br>
-          Developer:
-          <br>
-          Mbuelo
-        </p>
-        <a [routerLink]="['/TshindoloPark/pictures']" [state]="{ pictures: pictures }">View Park Pictures</a>
-
-      
-    </div>
-
+<div class="container">
+  <div class="header">
+    <h5>By Phone</h5>
+    <h6>(Monday to Sunday, 9am to 3pm)</h6>
   </div>
-
+  <div class="info">
+    <p>N.E Maranda: 076 505 4062</p>
+    <p>N.A Maranda: 071 960 5638</p>
+    <p>Mbuelo: 078 772 2573</p>
+  </div>
+  <div class="location">
+    <h5>Location</h5>
+    <p>Your location information here</p>
+  </div>
 </div>

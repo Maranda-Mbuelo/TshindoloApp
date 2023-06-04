@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms'; // Import the FormsModule
 import { AppComponent } from './app.component';
 import { LocationComponent } from './location/location.component';
 import { ParkPicturesComponent } from './park-pictures/park-pictures.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'TshindoloPark/contact-us', component: ContactsComponent }, 
   { path: 'TshindoloPark/rate-us', component: TshindoloRatingComponent },
   { path: 'TshindoloPark/location', component: LocationComponent },
-  { path: 'TshindoloPark/pictures', component: ParkPicturesComponent}
+  { path: 'TshindoloPark/pictures', component: ParkPicturesComponent},
+  { path: 'TshindoloPark/gallery', component: GalleryComponent}
 ];
 
 @NgModule({
